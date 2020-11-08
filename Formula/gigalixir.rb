@@ -2,8 +2,8 @@ class Gigalixir < Formula
   include Language::Python::Virtualenv
   desc "Gigalixir CLI"
   homepage "https://www.gigalixir.com"
-  url "https://github.com/gigalixir/gigalixir-cli/archive/v1.1.10.tar.gz"
-  sha256 "d8affe1e846833baa7ad973343c2b7006fb578854307038c05c3f716f72c0b9c"
+  url "https://github.com/gigalixir/gigalixir-cli/archive/v1.2.0.tar.gz"
+  sha256 "d4c33dc5e5e3201260a0cb0b65bf14dd64382a41557d2fd49d380e7da160ad19"
 
   depends_on "python"
 
@@ -33,6 +33,11 @@ class Gigalixir < Formula
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/71/2a/2e4e77803a8bd6408a2903340ac498cb0a2181811af7c9ec92cb70b0308a/Pygments-2.2.0.tar.gz"
     sha256 "dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc"
+  end
+
+  resource "qrcode" do
+    url "https://files.pythonhosted.org/packages/19/d5/6c7d4e103d94364d067636417a77a6024219c58cd6e9f428ece9b5061ef9/qrcode-6.1.tar.gz"
+    sha256 "505253854f607f2abf4d16092c61d4e9d511a3b4392e60bff957a68592b04369"
   end
 
   resource "requests" do
