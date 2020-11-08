@@ -3,7 +3,7 @@ class Gigalixir < Formula
   desc "Gigalixir CLI"
   homepage "https://www.gigalixir.com"
   url "https://github.com/gigalixir/gigalixir-cli/archive/v1.2.0.tar.gz"
-  sha256 "d4c33dc5e5e3201260a0cb0b65bf14dd64382a41557d2fd49d380e7da160ad19"
+  sha256 "b536afcc8bb96cadf8d9172180450677d2146fdbd4bc43cc4245d04210e3eabf"
 
   depends_on "python"
 
