@@ -9,10 +9,13 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: Run brew install
+      - name: Run brew update
         run: |
           set -e
           brew update
+      - name: Run brew install
+        run: |
+          set -e
           brew install Formula/gigalixir.rb
       - name: Check gigalixir
         run: |
