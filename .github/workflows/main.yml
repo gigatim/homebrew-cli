@@ -12,10 +12,7 @@ jobs:
       - name: Run brew update
         run: brew update
       - name: Run brew install
-        run: |
-          ls -l
-          ls -l Formula
-          brew install Formula/gigalixir.rb
+        run: brew tap gigalixir/brew && brew install gigalixir
       - name: Check gigalixir
         run: |
           gigalixir version
