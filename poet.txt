@@ -23,11 +23,6 @@
     sha256 "9933f28f70d0517686bd7de36166dda42094eac49415459d9bdf5e7df3e0086d"
   end
 
-  resource "gigalixir" do
-    url "https://files.pythonhosted.org/packages/c5/88/f83e5d3d1ecc2354c3b523e5fc0c7f6625e912889ca28e5bdca66a69af43/gigalixir-1.2.3.tar.gz"
-    sha256 "1b7a9aed7e61a3828f5a11774803edc39358e2ac463b3b5e52af267f3420dc66"
-  end
-
   resource "idna" do
     url "https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz"
     sha256 "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
