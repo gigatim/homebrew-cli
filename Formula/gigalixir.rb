@@ -7,6 +7,9 @@ class Gigalixir < Formula
 
   depends_on "python"
 
+  # needed for cryptography
+  depends_on "rust"
+
   # see NOTES.md for how to generate these resources
   # do *not* include gigalixir in this list!
 
