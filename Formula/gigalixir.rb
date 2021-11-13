@@ -2,8 +2,8 @@ class Gigalixir < Formula
   include Language::Python::Virtualenv
   desc "Gigalixir CLI"
   homepage "https://www.gigalixir.com"
-  url "https://github.com/gigalixir/gigalixir-cli/archive/v1.2.3.tar.gz"
-  sha256 "c8d40c97dae89cba0e84b44b430fa3c427c62a1996ae7447eed278274548f3e1"
+  url "https://github.com/gigalixir/gigalixir-cli/archive/v1.2.4.tar.gz"
+  sha256 "77bfee69bf3b2fa2809bfb3c1b510f5f596675784fe41485307c9fc13f665943"
 
   depends_on "python"
 
@@ -31,8 +31,8 @@ class Gigalixir < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/10/91/90b8d4cd611ac2aa526290ae4b4285aa5ea57ee191c63c2f3d04170d7683/cryptography-35.0.0.tar.gz"
-    sha256 "9933f28f70d0517686bd7de36166dda42094eac49415459d9bdf5e7df3e0086d"
+    url "https://files.pythonhosted.org/packages/cc/98/8a258ab4787e6f835d350639792527d2eb7946ff9fc0caca9c3f4cf5dcfe/cryptography-3.4.8.tar.gz"
+    sha256 "94cc5ed4ceaefcbe5bf38c8fba6a21fc1d365bb8fb826ea1688e3370b2e24a1c"
   end
 
   resource "idna" do
