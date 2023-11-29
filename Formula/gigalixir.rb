@@ -108,8 +108,8 @@ class Gigalixir < Formula
   end
 
   def install
+    puts libexec.inspect
+    puts libexec
     virtualenv_install_with_resources
-    puts buildpath
-    puts Dir.entries(buildpath)
   end
 end
