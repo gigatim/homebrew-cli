@@ -5,7 +5,7 @@ class Gigalixir < Formula
   url "https://github.com/gigalixir/gigalixir-cli/archive/v1.9.1.tar.gz"
   sha256 "2dcf5c1a7c06ab1d7ee2335bf832f2ad6d9dae0e014e9ad7b635fe2fe56fe476"
 
-  depends_on "python@3.x"
+  depends_on "python"
 
   # needed for cryptography
   depends_on "rust"
