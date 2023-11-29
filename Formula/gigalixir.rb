@@ -38,11 +38,6 @@ class Gigalixir < Formula
     sha256 "13f93ce9bea8016c253b34afc6bd6a75993e5c40672ed5405a9c832f0d4a00bc"
   end
 
-  resource "gigalixir" do
-    url "https://files.pythonhosted.org/packages/ba/a4/79a8d420c878c948edd1928739b7bb982fc4018fa8fe778bd1d9208680a7/gigalixir-1.9.1.tar.gz"
-    sha256 "889ab41564529125a4e59b19e48cde5e79ee36c1a8a76922be94089d67bd526c"
-  end
-
   resource "idna" do
     url "https://files.pythonhosted.org/packages/bf/3f/ea4b9117521a1e9c50344b909be7886dd00a519552724809bb1f486986c2/idna-3.6.tar.gz"
     sha256 "9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca"
@@ -108,8 +103,6 @@ class Gigalixir < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    venv.pip_install resources
-    venv.pip_install_and_link
+    virtualenv_install_with_resources
   end
 end
