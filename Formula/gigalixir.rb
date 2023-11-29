@@ -108,7 +108,6 @@ class Gigalixir < Formula
   end
 
   def install
-    puts "hello, installing"
     virtualenv_install_with_resources
   end
 end
