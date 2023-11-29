@@ -109,5 +109,7 @@ class Gigalixir < Formula
 
   def install
     virtualenv_install_with_resources
+    puts buildpath
+    puts Dir.entries(buildpath)
   end
 end
