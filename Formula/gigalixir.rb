@@ -5,7 +5,7 @@ class Gigalixir < Formula
   url "https://github.com/gigalixir/gigalixir-cli/archive/v1.9.1.tar.gz"
   sha256 "2dcf5c1a7c06ab1d7ee2335bf832f2ad6d9dae0e014e9ad7b635fe2fe56fe476"
 
-  depends_on "python"
+  depends_on "python@3.x"
 
   # needed for cryptography
   depends_on "rust"
@@ -108,8 +108,6 @@ class Gigalixir < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    venv.pip_install resources
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 end
