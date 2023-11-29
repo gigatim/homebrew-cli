@@ -6,12 +6,7 @@ class Gigalixir < Formula
   sha256 "2dcf5c1a7c06ab1d7ee2335bf832f2ad6d9dae0e014e9ad7b635fe2fe56fe476"
 
   depends_on "python"
-
-  # needed for cryptography
-  depends_on "rust"
-
-  # see NOTES.md for how to generate these resources
-  # do *not* include gigalixir in this list!
+  depends_on "rust" # needed for cryptography
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/d4/91/c89518dd4fe1f3a4e3f6ab7ff23cb00ef2e8c9adf99dacc618ad5e068e28/certifi-2023.11.17.tar.gz"
@@ -97,6 +92,7 @@ class Gigalixir < Formula
     url "https://files.pythonhosted.org/packages/36/dd/a6b232f449e1bc71802a5b7950dc3675d32c6dbc2a1bd6d71f065551adb6/urllib3-2.1.0.tar.gz"
     sha256 "df7aa8afb0148fa78488e7899b2c59b5f4ffcfa82e6c54ccb9dd37c1d7b52d54"
   end
+
 
   test do
     system bin/"gigalixir", "version"
