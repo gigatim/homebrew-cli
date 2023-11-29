@@ -3,7 +3,7 @@ class Gigalixir < Formula
   desc "Gigalixir CLI"
   homepage "https://www.gigalixir.com"
   url "https://github.com/gigalixir/gigalixir-cli/archive/v1.9.1.tar.gz"
-  sha256 "2dcf5c1a7c06ab1d7ee2335bf832f2ad6d9dae0e014e9ad7b635fe2fe56fe475"
+  sha256 "2dcf5c1a7c06ab1d7ee2335bf832f2ad6d9dae0e014e9ad7b635fe2fe56fe476"
 
   depends_on "python"
 
@@ -105,5 +105,10 @@ class Gigalixir < Formula
 
   test do
     system bin/"gigalixir", "version"
+  end
+
+  def install
+    puts "hello, installing"
+    virtualenv_install_with_resources
   end
 end
